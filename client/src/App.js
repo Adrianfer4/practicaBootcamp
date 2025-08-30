@@ -1,7 +1,9 @@
 import './App.css';
 import User from './components/getuser/User';
 import AddUser from './components/adduser/AddUser';
+import UpdateUser from './components/updateuser/UpdateUser';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const route = createBrowserRouter([
@@ -12,6 +14,10 @@ function App() {
     {
       path: '/add',
       element: <AddUser />
+    },
+    {
+      path: '/update/:id',
+      element: <UpdateUser />
     }
   ]);
 
@@ -20,6 +26,7 @@ function App() {
       <header className='App-header'>
         <RouterProvider router={route} />
       </header>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 }

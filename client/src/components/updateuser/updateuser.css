@@ -1,0 +1,91 @@
+.updateUser {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.updateUser h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.updateUser .btn-secondary {
+  background: #6c757d;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.3s;
+}
+
+.updateUser .btn-secondary:hover {
+  background: #5a6268;
+}
+
+.updateUser form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.updateUser .form-group label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #444;
+}
+
+.updateUser .form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 1rem;
+}
+
+.updateUser .form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.updateUser .btn-primary {
+  background: #007bff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.updateUser .btn-primary:hover {
+  background: #0056b3;
+}
+
+/* ✅ Responsividad */
+@media (max-width: 600px) {
+  .updateUser {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .updateUser h3 {
+    font-size: 1.5rem;
+  }
+
+  .updateUser .btn-primary,
+  .updateUser .btn-secondary {
+    width: 100%;
+  }
+}
