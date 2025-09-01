@@ -1,0 +1,91 @@
+.car-modal-dialog .modal-content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+.car-modal-header {
+  border-bottom: none;
+  justify-content: center;
+  background: linear-gradient(135deg, #17a2b8, #20c997);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.car-modal-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 100%;
+}
+
+/* Body */
+.car-modal-body {
+  padding: 2rem;
+}
+
+.car-modal-image {
+  width: 50%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.5rem;
+}
+
+.car-modal-description {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #000;
+}
+
+.car-modal-year {
+  font-weight: 500;
+  color: #000;
+}
+
+/* Footer */
+.car-modal-button {
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #17a2b8, #20c997);
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.car-modal-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(23, 162, 184, 0.5);
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .car-modal-image {
+    width: 100%;
+    max-height: 250px;
+  }
+
+  .car-modal-title {
+    font-size: 1.3rem;
+  }
+}
